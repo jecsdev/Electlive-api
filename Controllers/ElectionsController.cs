@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ElectLive_API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class ElectionsController : Controller
     {   

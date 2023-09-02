@@ -1,5 +1,7 @@
 using ElectLive_API.Data.Model;
+using ElectLive_API.Repository;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContextPool<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("connection")));
 builder.Services.AddMvcCore();
+builder.Services.AddScoped<IElecLiveRepository, ElecLiveRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
