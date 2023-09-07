@@ -1,7 +1,7 @@
+using ElectLive_API.Controllers;
 using ElectLive_API.Data.Model;
 using ElectLive_API.Repository;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +14,21 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContextPool<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("connection")));
 builder.Services.AddMvcCore();
 builder.Services.AddScoped<IElecLiveRepository, ElecLiveRepository>();
+builder.Services.AddSignalRCore();
+builder.Services.AddSignalR();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("ClientPermission", policy =>
+    {
+        policy.AllowAnyHeader()
+        .AllowAnyMethod()
+        .WithOrigins("http://localhost:3000")
+        .AllowCredentials();
+    });
+});
 var app = builder.Build();
+
+app.MapHub<VotingsHub>("/votings");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -23,6 +37,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors("ClientPermission");
+   
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

@@ -1,6 +1,7 @@
 ﻿using ElectLive_API.Data.Model;
 using ElectLive_API.Repository;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 
 namespace ElectLive_API.Controllers
 {
@@ -10,14 +11,16 @@ namespace ElectLive_API.Controllers
         
     {   /// This represents the private var for repository for whole project... maybe i would change it in the future, who knows...
         private readonly IElecLiveRepository _repository;
+        private IHubContext<VotingsHub> _votingsHub;
         /// <summary>
         /// 
         /// </summary>
         /// <param name="repository">This represents the constructor repository var for whole project... maybe i would change it in the future, who knows...</param>
 
-        public VotingController(IElecLiveRepository repository)
+        public VotingController(IElecLiveRepository repository, IHubContext<VotingsHub> votingsHub)
         {
             _repository = repository;
+            _votingsHub = votingsHub;
         }
         /// <summary>
         /// 
@@ -63,7 +66,7 @@ namespace ElectLive_API.Controllers
                 }
 
                 var createdVoting = await _repository.AddVoting(voting);
-                return CreatedAtAction(nameof(GetVoting), new { id = createdVoting.Id }, createdVoting);
+                return Ok();
             }catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status406NotAcceptable, ex.Message);

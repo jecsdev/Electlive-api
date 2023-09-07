@@ -75,3 +75,5 @@ C:\Users\john0\source\repos\ElectLive API\bin\Debug\net7.0\Microsoft.EntityFrame
 C:\Users\john0\source\repos\ElectLive API\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\john0\source\repos\ElectLive API\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Users\john0\source\repos\ElectLive API\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\john0\source\repos\ElectLive API\bin\Debug\net7.0\libman.json
+C:\Users\john0\source\repos\ElectLive API\bin\Debug\net7.0\lib\microsoft\signalr\package.json
