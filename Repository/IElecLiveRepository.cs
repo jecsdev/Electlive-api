@@ -7,7 +7,7 @@ namespace ElectLive_API.Repository
     {
         // Method for adding a new Voting entity to the repository.
         // It returns a Task representing the asynchronous operation.
-        Task<Voting> AddVoting(Voting voting);
+        Task<Voting> AddOrUpdateVoting(Voting voting);
 
         // Method for retrieving a Voting entity by its ID from the repository.
         // It returns a Task representing the asynchronous operation.

@@ -7,6 +7,7 @@
         public string? VatId { get; set; }
         public string? Census { get; set; }
         public string? School { get; set; }
+        public Boolean IsRegistered { get; set; }
 
     }
 }

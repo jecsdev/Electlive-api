@@ -65,7 +65,7 @@ namespace ElectLive_API.Controllers
                     return BadRequest();
                 }
 
-                var createdVoting = await _repository.AddVoting(voting);
+                var createdVoting = await _repository.AddOrUpdateVoting(voting);
                 return Ok();
             }catch (Exception ex)
             {

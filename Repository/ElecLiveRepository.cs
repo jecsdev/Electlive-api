@@ -15,16 +15,36 @@ namespace ElectLive_API.Repository
 
         // Method for adding a new Voting entity to the database.
         // It uses asynchronous operations for better performance.
-        public async Task<Voting> AddVoting(Voting voting)
+        public async Task<Voting> AddOrUpdateVoting(Voting voting)
         {
-            // Add the voting entity to the DbContext.
-            var result = await _dbContext.Votings.AddAsync(voting);
+            // Check if exists this entity.
+            var existingVoting = await _dbContext.Votings.SingleOrDefaultAsync(vot => vot.VatId == voting.VatId);
 
-            // Save the changes to the database.
-            await _dbContext.SaveChangesAsync();
+            if (existingVoting != null)
+            {
+                // Update current properties with new properties.
+                existingVoting.School = voting.School;
+                existingVoting.Census = voting.Census;
+                existingVoting.IsRegistered = true;
+                existingVoting.Name = voting.Name;
 
-            // Return the added entity.
-            return result.Entity;
+                // Save changes into database.
+                await _dbContext.SaveChangesAsync();
+
+                // Return updated entity.
+                return existingVoting;
+            }
+            else
+            {
+                // Add new entity to DbContext.
+                var addedVoting = await _dbContext.Votings.AddAsync(voting);
+
+                // Save changes into database.
+                await _dbContext.SaveChangesAsync();
+
+                // Return new entity.
+                return addedVoting.Entity;
+            }
         }
 
         // Method for retrieving a Voting entity by its ID from the database.
