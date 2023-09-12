@@ -28,8 +28,6 @@ builder.Services.AddCors(options =>
 });
 var app = builder.Build();
 
-app.MapHub<VotingsHub>("/votings");
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -44,5 +42,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapHub<VotingsHub>("/votings");
 
 app.Run();
