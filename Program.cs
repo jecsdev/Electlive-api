@@ -14,8 +14,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContextPool<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("connection")));
 builder.Services.AddMvcCore();
 builder.Services.AddScoped<IElecLiveRepository, ElecLiveRepository>();
-builder.Services.AddSignalRCore();
-builder.Services.AddSignalR();
+builder.Services.AddSignalR(options =>
+{
+    options.MaximumParallelInvocationsPerClient = 1;
+});
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("ClientPermission", policy =>
@@ -42,6 +44,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-app.MapHub<VotingsHub>("/votings");
+app.MapHub<VotingsHub>("/votingsStream");
 
 app.Run();

@@ -12,6 +12,7 @@ namespace ElectLive_API.Repository
         // Method for retrieving a Voting entity by its ID from the repository.
         // It returns a Task representing the asynchronous operation.
         Task<Voting> GetVoting(int votingId);
+        Task<IEnumerable<Voting>> GetAllVotings();
     }
 }
 

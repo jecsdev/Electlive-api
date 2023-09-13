@@ -12,18 +12,17 @@ namespace ElectLive_API.Controllers
         
     {   /// This represents the private var for repository for whole project... maybe i would change it in the future, who knows...
         private readonly IElecLiveRepository _repository;
-        private readonly ApplicationDbContext _dbContext;
         private IHubContext<VotingsHub> _votingsHub;
         /// <summary>
         /// 
         /// </summary>
         /// <param name="repository">This represents the constructor repository var for whole project... maybe i would change it in the future, who knows...</param>
 
-        public VotingController(IElecLiveRepository repository, IHubContext<VotingsHub> votingsHub, ApplicationDbContext dbContext)
+        public VotingController(IElecLiveRepository repository, IHubContext<VotingsHub> votingsHub)
         {
             _repository = repository;
             _votingsHub = votingsHub;
-            _dbContext = dbContext;
+            
         }
         /// <summary>
         /// 
@@ -71,7 +70,8 @@ namespace ElectLive_API.Controllers
                 }
 
                 var createdVoting = await _repository.AddOrUpdateVoting(voting);
-
+                var data = await _repository.GetAllVotings();
+                await _votingsHub.Clients.All.SendAsync("Data", data);
                 return Ok();
             }catch (Exception ex)
             {

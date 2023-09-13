@@ -47,6 +47,11 @@ namespace ElectLive_API.Repository
             }
         }
 
+        public async Task<IEnumerable<Voting>> GetAllVotings()
+        {
+            return await _dbContext.Votings.ToListAsync();
+        }
+
         // Method for retrieving a Voting entity by its ID from the database.
         // It uses asynchronous operations to avoid blocking the thread.
         public async Task<Voting> GetVoting(int votingId)

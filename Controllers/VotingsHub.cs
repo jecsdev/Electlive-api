@@ -27,7 +27,7 @@ namespace ElectLive_API.Controllers
 
         public async Task GetDataFromDb()
         {
-            var data = await _dbContext.Votings.ToListAsync();
+            var data = await _dbContext.Votings.ToArrayAsync();
             await Clients.All.SendAsync("Data", data);
         }
     }
