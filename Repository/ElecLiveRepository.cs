@@ -23,10 +23,8 @@ namespace ElectLive_API.Repository
             if (existingVoting != null)
             {
                 // Update current properties with new properties.
-                existingVoting.School = voting.School;
-                existingVoting.Census = voting.Census;
-                existingVoting.IsRegistered = true;
-                existingVoting.Name = voting.Name;
+                existingVoting.IsRegistered = voting.IsRegistered;
+                
 
                 // Save changes into database.
                 await _dbContext.SaveChangesAsync();
