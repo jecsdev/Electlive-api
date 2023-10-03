@@ -23,7 +23,7 @@ namespace ElectLive_API.Repository
             if (existingVoting != null)
             {
                 // Update current properties with new properties.
-                existingVoting.IsRegistered = voting.IsRegistered;
+                existingVoting.IsRegistered = true;
                 
 
                 // Save changes into database.
