@@ -77,3 +77,83 @@ C:\Users\john0\source\repos\ElectLive API\bin\Debug\net7.0\Mono.TextTemplating.d
 C:\Users\john0\source\repos\ElectLive API\bin\Debug\net7.0\System.CodeDom.dll
 C:\Users\john0\source\repos\ElectLive API\bin\Debug\net7.0\libman.json
 C:\Users\john0\source\repos\ElectLive API\bin\Debug\net7.0\lib\microsoft\signalr\package.json
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\appsettings.json
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\libman.json
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\lib\microsoft\signalr\package.json
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\ElectLive API.exe
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\ElectLive API.deps.json
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\ElectLive API.runtimeconfig.json
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\ElectLive API.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\ElectLive API.pdb
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Humanizer.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\john0\Source\Repos\Electlive-api\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\ElectLive API.csproj.AssemblyReference.cache
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\ElectLive API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\ElectLive API.AssemblyInfoInputs.cache
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\ElectLive API.AssemblyInfo.cs
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\ElectLive API.csproj.CoreCompileInputs.cache
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\ElectLive API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\ElectLive API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\staticwebassets\msbuild.ElectLive API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\staticwebassets\msbuild.build.ElectLive API.props
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.ElectLive API.props
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.ElectLive API.props
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\scopedcss\bundle\ElectLive API.styles.css
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\ElectLive API.csproj.CopyComplete
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\ElectLive API.dll
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\refint\ElectLive API.dll
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\ElectLive API.pdb
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\ElectLive API.genruntimeconfig.cache
+C:\Users\john0\Source\Repos\Electlive-api\obj\Debug\net7.0\ref\ElectLive API.dll
+C:\Users\john0\source\repos\Electlive-api\bin\Debug\net7.0\System.Net.WebSockets.WebSocketProtocol.dll

@@ -72,7 +72,7 @@ namespace ElectLive_API.Controllers
                 var createdVoting = await _repository.AddOrUpdateVoting(voting);
                 var data = await _repository.GetAllVotings();
                 await _votingsHub.Clients.All.SendAsync("Data", data);
-                return Ok();
+                return Created("Ok", data);
             }catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status406NotAcceptable, ex.Message);

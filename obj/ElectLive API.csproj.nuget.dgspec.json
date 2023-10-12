@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\john0\\source\\repos\\ElectLive API\\ElectLive API.csproj": {}
+    "C:\\Users\\john0\\source\\repos\\Electlive-api\\ElectLive API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\john0\\source\\repos\\ElectLive API\\ElectLive API.csproj": {
+    "C:\\Users\\john0\\source\\repos\\Electlive-api\\ElectLive API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\john0\\source\\repos\\ElectLive API\\ElectLive API.csproj",
+        "projectUniqueName": "C:\\Users\\john0\\source\\repos\\Electlive-api\\ElectLive API.csproj",
         "projectName": "ElectLive API",
-        "projectPath": "C:\\Users\\john0\\source\\repos\\ElectLive API\\ElectLive API.csproj",
+        "projectPath": "C:\\Users\\john0\\source\\repos\\Electlive-api\\ElectLive API.csproj",
         "packagesPath": "C:\\Users\\john0\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\john0\\source\\repos\\ElectLive API\\obj\\",
+        "outputPath": "C:\\Users\\john0\\source\\repos\\Electlive-api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\john0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.308\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,9 +49,13 @@
               "target": "Package",
               "version": "[7.0.10, )"
             },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.0.4, )"
+            },
             "Microsoft.AspNetCore.SignalR.Core": {
               "target": "Package",
-              "version": "[1.1.0, )"
+              "version": "[1.0.4, )"
             },
             "Microsoft.Bcl.AsyncInterfaces": {
               "target": "Package",
@@ -55,7 +63,7 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.10, )"
+              "version": "[7.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -103,7 +111,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.308\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
