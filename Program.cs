@@ -11,7 +11,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContextPool<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("connection")));
+builder.Services.AddDbContextPool<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("connection"), 
+    options => options.EnableRetryOnFailure(maxRetryCount: 5,
+                    maxRetryDelay: System.TimeSpan.FromSeconds(30),
+                    errorNumbersToAdd: null)));
 builder.Services.AddMvcCore();
 builder.Services.AddScoped<IElecLiveRepository, ElecLiveRepository>();
 builder.Services.AddSignalR(options =>
@@ -40,6 +43,8 @@ if (app.Environment.IsDevelopment())
 app.UseCors("ClientPermission");
    
 app.UseHttpsRedirection();
+
+app.UseDeveloperExceptionPage();
 
 app.UseAuthorization();
 

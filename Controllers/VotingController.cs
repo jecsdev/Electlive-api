@@ -24,11 +24,19 @@ namespace ElectLive_API.Controllers
             _votingsHub = votingsHub;
             
         }
+           
         /// <summary>
-        /// 
+        /// Retrieve the complete list of votings
         /// </summary>
-        /// <param name="id">Represents the id from Voting class</param>
-        /// <returns></returns>
+        /// <returns>This is the list of votings</returns>
+        [HttpGet]
+        public async Task<IEnumerable<Voting>> GetAllVotings()
+        {
+            var votings = await _repository.GetAllVotings();
+            return votings;
+        }
+
+        
 
         [HttpGet("{id:int}")]
 

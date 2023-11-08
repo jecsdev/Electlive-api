@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\john0\OneDrive\Documents\JecsDevelopment</_PublishTargetUrl>
+    <History>True|2023-11-08T16:57:32.7646181Z;True|2023-11-08T12:31:41.9992565-04:00;True|2023-11-08T12:22:38.9198894-04:00;True|2023-11-08T12:19:22.0127449-04:00;True|2023-11-08T11:19:43.3045107-04:00;False|2023-11-08T11:19:08.9475124-04:00;True|2023-11-02T18:34:35.6487897-04:00;</History>
+    <LastFailureDetails />
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="connection">
+      <Value>server=DESKTOP-QB76E77\SQLEXPRESS%3bdatabase=Electlive%3b Trusted_Connection=true%3b TrustServerCertificate=True%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="ElectLive_API.Data.Model.ApplicationDbContext">
+      <Value>server=DESKTOP-QB76E77\SQLEXPRESS%3bdatabase=Electlive%3b Trusted_Connection=true%3b TrustServerCertificate=True%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
