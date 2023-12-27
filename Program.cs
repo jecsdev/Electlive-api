@@ -27,7 +27,7 @@ builder.Services.AddCors(options =>
     {
         policy.AllowAnyHeader()
         .AllowAnyMethod()
-        .WithOrigins("http://localhost:3000")
+        .WithOrigins("http://178.16.142.108:3000", "http://localhost:3000")
         .AllowCredentials();
     });
 });
@@ -40,11 +40,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors("ClientPermission");
+
    
 app.UseHttpsRedirection();
 
 app.UseDeveloperExceptionPage();
+
+app.UseRouting();
+
+app.UseCors("ClientPermission");
 
 app.UseAuthorization();
 
